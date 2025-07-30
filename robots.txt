@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /login/
+Disallow: /wp-admin/  # Se for um site estático que simula WordPress
+
+# Bloqueia arquivos específicos
+Disallow: /config.json
+Disallow: /backup/
+
+# Permite bots confiáveis (opcional)
+User-agent: Googlebot
+Allow: /public/
+
+# Bloqueia bots maliciosos conhecidos
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
